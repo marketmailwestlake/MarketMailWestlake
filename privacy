@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | MarketMail Westlake</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='22' fill='%231B2A4A'/%3E%3Ctext x='60' y='86' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='86' font-weight='700' fill='%23FFFFFF'%3EM%3C/text%3E%3Ccircle cx='92' cy='32' r='9' fill='%23B22234'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2A4A;
+    --navy-light: #243659;
+    --red: #B22234;
+    --red-dark: #8a1a27;
+    --black: #111111;
+    --white: #FFFFFF;
+    --gray: #f5f5f3;
+    --gray-mid: #e8e6e0;
+    --text-muted: #6b6b6b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+    border-bottom: 2px solid rgba(178,34,52,0.4);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .nav-logo .bold { font-weight: 900; font-size: 1.1rem; color: var(--white); letter-spacing: 0.5px; }
+  .nav-logo .script { font-family: 'Pinyon Script', cursive; font-size: 1.5rem; color: var(--white); }
+
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    background: var(--red);
+    color: var(--white) !important;
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: none !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--red-dark) !important; }
+
+  .page-header {
+    background: var(--navy);
+    padding: 120px 40px 60px;
+    text-align: center;
+  }
+
+  .page-header .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 16px;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+
+  .page-header .updated {
+    margin-top: 16px;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 1px;
+  }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 40px 100px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+    border-left: 3px solid var(--red);
+    padding-left: 24px;
+  }
+
+  .section h2 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 14px;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section ul {
+    padding-left: 16px;
+    margin-top: 8px;
+  }
+
+  .section ul li {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 6px;
+  }
+
+  .contact-block {
+    background: var(--navy);
+    color: var(--white);
+    padding: 32px;
+    margin-top: 48px;
+  }
+
+  .contact-block p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    opacity: 0.85;
+  }
+
+  .contact-block a {
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  footer {
+    background: var(--navy);
+    border-top: 2px solid rgba(178,34,52,0.3);
+    padding: 32px 40px;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 600px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .page-header { padding: 100px 24px 48px; }
+    .content { padding: 48px 24px 80px; }
+    footer { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <span class="bold">MarketMail</span>
+    <span class="script">Westlake</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/#packages">Packages</a>
+    <a href="/#contact" class="nav-cta">Check Your Slot</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: June 25, 2026</div>
+</div>
+
+<div class="content">
+
+  <div class="section">
+    <h2>Who We Are</h2>
+    <p>MarketMail Westlake is a direct mail advertising service based in Austin, Texas, operated by Wyatt Harris. We connect local businesses with 15,000 affluent homeowners in the Westlake Hills area (ZIP codes 78746 and 78733) through co-op direct mail campaigns.</p>
+    <p>You can reach us at wyatt@marketmailwestlake.com or (512) 964-3682.</p>
+  </div>
+
+  <div class="section">
+    <h2>Information We Collect</h2>
+    <p>When you submit a form on our website or through our Meta (Facebook/Instagram) advertisements, we collect the following information:</p>
+    <ul>
+      <li>Your name</li>
+      <li>Your phone number</li>
+      <li>Your email address</li>
+      <li>Your business name and industry (if provided)</li>
+    </ul>
+    <p>We collect this information solely to follow up with you about advertising opportunities on the MarketMail Westlake mailer.</p>
+  </div>
+
+  <div class="section">
+    <h2>How We Use Your Information</h2>
+    <p>We use the information you provide to:</p>
+    <ul>
+      <li>Contact you to discuss available advertising slots</li>
+      <li>Send you invoices and confirm campaign details if you become a client</li>
+      <li>Follow up on your inquiry via phone or email</li>
+    </ul>
+    <p>We do not use your information for any purpose other than direct communication related to MarketMail Westlake advertising services.</p>
+  </div>
+
+  <div class="section">
+    <h2>We Do Not Sell Your Information</h2>
+    <p>We will never sell, rent, trade, or share your personal information with third parties for their marketing purposes. Your contact details are used only by MarketMail Westlake to follow up on your inquiry.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data Storage</h2>
+    <p>Your information is stored securely through our lead management tools. We retain your contact information only as long as necessary to fulfill the purpose for which it was collected. If you would like your information removed, contact us at any time and we will delete it promptly.</p>
+  </div>
+
+  <div class="section">
+    <h2>Meta Advertising</h2>
+    <p>We run lead generation advertisements on Facebook and Instagram through Meta's advertising platform. When you submit a lead form through one of our Meta ads, your information is collected through Meta's platform and shared with us. Meta's own Privacy Policy governs their data practices. You can review Meta's Privacy Policy at facebook.com/privacy/policy.</p>
+  </div>
+
+  <div class="section">
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal information we hold about you</li>
+      <li>Request that we correct or delete your information</li>
+      <li>Opt out of further communication from us at any time</li>
+    </ul>
+    <p>To exercise any of these rights, contact us directly.</p>
+  </div>
+
+  <div class="section">
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="contact-block">
+    <p>Questions about this Privacy Policy? Contact us at <a href="mailto:wyatt@marketmailwestlake.com">wyatt@marketmailwestlake.com</a> or call <a href="tel:5129643682">(512) 964-3682</a>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>MarketMail Westlake &nbsp;|&nbsp; Austin, TX &nbsp;|&nbsp; wyatt@marketmailwestlake.com</p>
+</footer>
+
+</body>
+</html>
